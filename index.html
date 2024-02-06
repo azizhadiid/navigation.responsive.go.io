@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Navbar Responsive</title>
+
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Start Navbar -->
+  <nav class="container">
+     <!-- Side bar -->
+     <div class="nav-mobile">
+        <i class="fa-solid fa-xmark" onclick="hideSidebar()"></i>
+        <div class="side-bar">
+          <a href="">About</a>
+          <a href="">Advantagos</a>
+          <a href="">Services</a>
+          <a href="">Projects</a>
+        </div>
+      </div>
+
+    <!-- Desktop -->
+    <p class="logo">HDZR</p>
+    <div class="componend">
+      <a href="">About</a>
+      <a href="">Advantagos</a>
+      <a href="">Services</a>
+      <a href="">Projects</a>
+    </div>
+    <button>Let's work!</button>
+    <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+  </nav>
+  <!-- End Navbar -->
+
+
+  <!-- My Script -->
+  <script src="script.js"></script>
+
+  <!-- Font Awasome -->
+  <script src="https://kit.fontawesome.com/3659f450a4.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(Img/pattern2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Dekstop Version */
+.container {
+    background-color: rgb(138, 143, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    top: 0;
+    height: auto;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container .logo{
+    font-size: 40px;
+    cursor: pointer;
+    position: relative;
+    right: 18%;
+    padding: 20px;
+    font-family: 'PT Serif',sans-serif;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.container .componend a{
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    right: 15%;
+}
+
+.container .componend a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.container .componend a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.container button {
+    font-size: 18px;
+    width: 150px;
+    height: 45px;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Open Sans';
+    background-color: #db530f;
+    border-radius: 150px;
+    position: absolute;
+    right: 6%;
+    cursor: pointer;
+    color: azure;
+    border: 1px solid azure;
+}
+
+.container button:hover{
+    background-color: #793311;
+}
+
+.container .fa-bars{
+    position: absolute;
+    right: 2%;
+    font-size: 40px;
+    color: azure;
+    cursor: pointer;
+    display: none;
+}
+
+/* Side bar */
+.nav-mobile {
+    background-color: rgb(138, 143, 148);
+    height: 100vh;
+    width: 300px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    opacity: 0.8;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: none;
+}
+
+.nav-mobile i {
+    font-size: 40px;
+    color: azure;
+    cursor: pointer;
+}
+
+.nav-mobile .side-bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.nav-mobile .side-bar a {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: azure;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-mobile .side-bar a:hover {
+    color: red;
+    background-color: rgb(111, 108, 104);
+    opacity: 0.5;
+    transition: 1s;
+    width: 100%;
+}
+/* End */
+
+
+
+/* mobile version */
+@media screen and (max-width: 756px) {
+    .container {
+        width: 100%;
+        border-radius: 0px;
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-top: 0px;
+    }
+
+    .container .logo {
+        position: relative;
+        right: 30%;
+    }
+
+    .container .componend a {
+        display: none;
+    }
+
+    .container button {
+        position: absolute;
+        right: 20%;
+    }
+
+    /* Mobile */
+    .container .fa-bars {
+        display: flex;
+        position: absolute;
+        right: 5%;
+    }
+
+    .nav-mobile .side-bar {
+        margin-top: 80px;
+    }    
+}
+
+
+
